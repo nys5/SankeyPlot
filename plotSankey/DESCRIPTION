@@ -1,0 +1,27 @@
+Package: plotSankey
+Title: Plots a Sankey Diagram
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Nancy",
+           family = "Sun",
+           role = c("aut", "cre"),
+           email = "nys5@cornell.edu",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: The main function makeSankey takes in a data frame to plot a Sankey diagram
+	There is the options for:
+	adding white space between risk factors with white.horizontal = T/F
+	adding white separation lines between years with white.vertical = T/F
+	changing title from default (cell(1,1) in data frame)
+	This function can take in any number of years and/or risk factors
+Imports:
+	tidyr,
+	ggplot2,
+	ggalluvial
+License: What license it uses
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.2
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr

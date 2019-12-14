@@ -1,0 +1,30 @@
+---
+title: "introduction"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{introduction}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+knitr::opts_chunk$set(fig.width = 7, fig.height = 4)
+```
+
+```{r setup}
+library(plotSankey)
+```
+
+```{r fig.align='center'}
+#Some example graphs
+makeSankey(risk1,F,T)
+makeSankey(risk2,T,F)
+makeSankey(risk2,F,F)
+makeSankey(risk3,F,T,"Risk Factors (with added data)")
+makeSankey(risk4,T,F,"Risk Factors (with added data)")
+makeSankey(risk5,T,T,"Risk Factors (with added data)")
+```
